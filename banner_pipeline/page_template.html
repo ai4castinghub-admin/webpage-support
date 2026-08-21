@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Featured public health news</title>
+  <style>
+    :root { color-scheme:light; --bg:#123b5d; --text:#fff; --accent:#ffe082; }
+    * { box-sizing:border-box; }
+    html,body { height:156px; margin:0; overflow:hidden; }
+    body { background:var(--bg); color:var(--text); font:16px/1.4 Arial,Helvetica,sans-serif; }
+    [hidden] { display:none !important; }
+    .banner { align-items:center; display:flex; gap:16px; height:156px; justify-content:space-between; margin:0 auto; max-width:1280px; padding:16px 20px; }
+    .story { margin:0; min-width:0; }
+    .source { display:block; font-size:.875rem; font-weight:700; margin-bottom:5px; }
+    .story a { color:var(--text); font-size:1.05rem; font-weight:600; text-decoration:underline; text-underline-offset:3px; }
+    .story a:hover { color:var(--accent); }
+    .story a:focus-visible,button:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+    .external { display:inline-block; margin-left:3px; }
+    .controls { display:flex; flex:0 0 auto; gap:6px; }
+    button { background:transparent; border:2px solid currentColor; border-radius:3px; color:var(--text); cursor:pointer; font:inherit; min-height:40px; min-width:40px; padding:4px 9px; }
+    button:hover { background:#fff; color:var(--bg); }
+    .empty { font-weight:600; margin:0; text-align:center; width:100%; }
+    .sr-only { border:0; clip:rect(1px,1px,1px,1px); clip-path:inset(50%); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px; white-space:nowrap; }
+    @media (max-width:600px) {
+      .banner { align-items:flex-start; flex-direction:column; gap:8px; padding:12px 14px; }
+      .story a { display:-webkit-box; font-size:.96rem; overflow:hidden; -webkit-box-orient:vertical; -webkit-line-clamp:2; }
+      .source { margin-bottom:2px; }
+      .controls { align-self:flex-end; }
+      button { min-height:36px; min-width:36px; padding:2px 7px; }
+    }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; transition:none !important; } }
+  </style>
+</head>
+<body>
+  <main class="banner" aria-label="Featured public health news">
+    <p class="empty" data-empty hidden>No current featured updates</p>
+    <p class="story" data-story hidden>
+      <span class="source" data-source></span>
+      <a data-link href="#" target="_blank" rel="noopener noreferrer">
+        <span data-title></span><span class="external" aria-hidden="true">↗</span>
+        <span class="sr-only"> Opens an external website in a new tab</span>
+      </a>
+    </p>
+    <div class="controls" data-controls hidden aria-label="Banner controls">
+      <button type="button" data-previous aria-label="Previous news item">‹</button>
+      <button type="button" data-pause aria-pressed="false">Pause</button>
+      <button type="button" data-next aria-label="Next news item">›</button>
+    </div>
+    <p class="sr-only" data-status aria-live="polite"></p>
+  </main>
+  <script id="banner-data" type="application/json">__REVIEWED_BANNER_DATA__</script>
+  <script>
+    (() => {
+      'use strict';
+      const root=document.querySelector('.banner');
+      const story=document.querySelector('[data-story]');
+      const empty=document.querySelector('[data-empty]');
+      const controls=document.querySelector('[data-controls]');
+      const source=document.querySelector('[data-source]');
+      const title=document.querySelector('[data-title]');
+      const link=document.querySelector('[data-link]');
+      const previous=document.querySelector('[data-previous]');
+      const next=document.querySelector('[data-next]');
+      const pause=document.querySelector('[data-pause]');
+      const status=document.querySelector('[data-status]');
+      const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+      let items=[],index=0,timer=null,userPaused=false,interactionPaused=false;
+
+      function safeItems(){
+        try{
+          const payload=JSON.parse(document.querySelector('#banner-data').textContent);
+          return Array.isArray(payload.items)?payload.items.filter((item)=>{
+            if(!item||typeof item.title!=='string'||typeof item.source!=='string')return false;
+            if(!Number.isFinite(Date.parse(item.expires_at))||Date.parse(item.expires_at)<=Date.now())return false;
+            try{return new URL(item.url).protocol==='https:';}catch(_){return false;}
+          }).slice(0,5):[];
+        }catch(_){return [];}
+      }
+      function stop(){if(timer)clearInterval(timer);timer=null;}
+      function showEmpty(){stop();items=[];story.hidden=true;controls.hidden=true;empty.hidden=false;}
+      function refresh(){
+        items=safeItems();
+        if(!items.length){showEmpty();return false;}
+        if(index>=items.length)index=0;
+        empty.hidden=true;story.hidden=false;controls.hidden=items.length<2;pause.hidden=reducedMotion.matches;
+        return true;
+      }
+      function render(announce=false){
+        if(!refresh())return;
+        const item=items[index];source.textContent=item.source;title.textContent=item.title;link.href=new URL(item.url).href;
+        if(announce)status.textContent=`News item ${index+1} of ${items.length}`;
+      }
+      function canRotate(){return items.length>1&&!userPaused&&!interactionPaused&&!reducedMotion.matches&&!document.hidden;}
+      function start(){stop();if(canRotate())timer=setInterval(()=>{index=(index+1)%items.length;render(false);},8000);}
+      function move(delta){index=(index+delta+items.length)%items.length;render(true);start();}
+
+      previous.addEventListener('click',()=>move(-1));
+      next.addEventListener('click',()=>move(1));
+      pause.addEventListener('click',()=>{userPaused=!userPaused;pause.setAttribute('aria-pressed',String(userPaused));pause.textContent=userPaused?'Play':'Pause';userPaused?stop():start();});
+      root.addEventListener('mouseenter',()=>{interactionPaused=true;stop();});
+      root.addEventListener('mouseleave',()=>{interactionPaused=false;start();});
+      root.addEventListener('focusin',()=>{interactionPaused=true;stop();});
+      root.addEventListener('focusout',(event)=>{if(!root.contains(event.relatedTarget)){interactionPaused=false;start();}});
+      document.addEventListener('visibilitychange',()=>{render(false);start();});
+      reducedMotion.addEventListener?.('change',()=>{render(false);start();});
+      render(false);start();
+    })();
+  </script>
+</body>
+</html>
+

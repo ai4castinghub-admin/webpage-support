@@ -1,0 +1,37 @@
+sources:
+  - id: phac-public-health-updates
+    name: Public Health Agency of Canada
+    type: rss
+    url: https://www.canada.ca/content/dam/phac-aspc/rss/new-eng.xml
+    enabled: true
+    allowed_hosts:
+      - canada.ca
+      - www.canada.ca
+
+  - id: phac-media-room
+    name: Public Health Agency of Canada
+    type: rss
+    # Current organization feed linked by Canada.ca's news subscription page.
+    url: "https://api.io.canada.ca/io-server/gc/news/en/v2?atomtitle=Public+Health+Agency+of+Canada&dept=publichealthagencyofcanada&format=atom&orderBy=desc&pick=50&publishedDate%3E=2021-07-23&sort=publishedDate"
+    enabled: true
+    allowed_hosts:
+      - canada.ca
+      - www.canada.ca
+
+  - id: pho-news
+    name: Public Health Ontario
+    type: pho_html
+    url: https://www.publichealthontario.ca/en/About/News
+    enabled: true
+    allowed_hosts:
+      - publichealthontario.ca
+      - www.publichealthontario.ca
+
+  # Replace example.org with the website URL, then set enabled to true.
+  - id: own-blog
+    name: Our Blog
+    type: wordpress
+    url: https://example.org/wp-json/wp/v2/posts
+    enabled: false
+    allowed_hosts:
+      - example.org
