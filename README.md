@@ -35,7 +35,7 @@ Edit `config/sources.yml`. Replace `example.org` in `own-blog`, update its `allo
 https://YOUR-SITE.example/wp-json/wp/v2/posts
 ```
 
-The WordPress posts endpoint normally requires no plugin. PHAC uses official feeds. The PHO parser fails rather than guessing if the News page markup becomes ambiguous. As an immediate PHO fallback, manually run **Collect weekly banner candidates** and complete all three optional PHO fields; that candidate receives the same immutable lock and lead review.
+The WordPress posts endpoint normally requires no plugin. PHAC uses official feeds. CBC News uses its public Health RSS feed and contributes only items matching the respiratory-virus, pharmaceutical supply-chain, or disease-modelling rules in `config/sources.yml`. The PHO parser fails rather than guessing if the News page markup becomes ambiguous. As an immediate PHO fallback, manually run **Collect weekly banner candidates** and complete all three optional PHO fields; that candidate receives the same immutable lock and lead review.
 
 ## 3. Protect the approval gate
 

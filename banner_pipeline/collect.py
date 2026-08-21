@@ -25,6 +25,30 @@ DATE_PATTERN = re.compile(
 USER_AGENT = "ReviewedNewsBanner/1.0 (+website content collection; weekly)"
 
 
+def matches_topic(source: dict, *values: str) -> bool:
+    """Apply optional source topic rules to normalized title/summary text.
+
+    A rule matches when any configured phrase matches, or when every keyword
+    group under ``all`` contributes at least one match. Sources without rules
+    remain unfiltered.
+    """
+    rules = source.get("topic_rules")
+    if not rules:
+        return True
+    haystack = " ".join(clean_title(value).lower() for value in values if value)
+    for rule in rules:
+        phrases = rule.get("any", [])
+        if phrases and any(str(phrase).lower() in haystack for phrase in phrases):
+            return True
+        groups = rule.get("all", [])
+        if groups and all(
+            any(str(phrase).lower() in haystack for phrase in group)
+            for group in groups
+        ):
+            return True
+    return False
+
+
 def _feed_date(entry: dict) -> datetime:
     for key in ("published", "updated", "created"):
         value = entry.get(key)
@@ -48,14 +72,15 @@ def parse_feed(payload: bytes | str, source: dict) -> list[dict]:
     for entry in parsed.entries:
         try:
             title = clean_title(entry.get("title", ""))
+            summary = clean_title(entry.get("summary") or entry.get("description") or "")
             url = canonical_url(entry.get("link", ""))
             published = _feed_date(entry)
-            if not title:
+            if not title or not matches_topic(source, title, summary):
                 continue
             items.append(_candidate(source, title, url, published))
         except (TypeError, ValueError):
             continue
-    if not items:
+    if not items and not source.get("topic_rules"):
         raise ValueError(f"feed for {source['id']} contained no valid entries")
     return items
 

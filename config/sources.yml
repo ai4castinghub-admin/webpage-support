@@ -27,6 +27,41 @@ sources:
       - publichealthontario.ca
       - www.publichealthontario.ca
 
+  - id: cbc-health
+    name: CBC News
+    type: rss
+    # CBC's public Health RSS feed; article links resolve under cbc.ca/news.
+    url: https://www.cbc.ca/cmlink/rss-health
+    enabled: true
+    allowed_hosts:
+      - cbc.ca
+      - www.cbc.ca
+    topic_rules:
+      # Respiratory-virus activity and related surveillance.
+      - any:
+          - respiratory virus
+          - respiratory illness
+          - influenza
+          - flu season
+          - avian flu
+          - bird flu
+          - h5n1
+          - rsv
+          - respiratory syncytial virus
+          - covid
+          - coronavirus
+          - sars-cov-2
+          - measles
+          - wastewater surveillance
+      # Pharmaceutical availability, production, and supply chains.
+      - all:
+          - [pharmaceutical, drug, medicine, medication, vaccine]
+          - [supply chain, shortage, availability, stockpile, manufacturing, production]
+      # Research models for outbreaks, transmission, and surveillance.
+      - all:
+          - [model, modelling, modeling, forecast, prediction, nowcast, digital twin]
+          - [outbreak, epidemic, pandemic, transmission, respiratory, influenza, flu, rsv, covid, virus, disease, wastewater]
+
   # Replace example.org with the website URL, then set enabled to true.
   - id: own-blog
     name: Our Blog

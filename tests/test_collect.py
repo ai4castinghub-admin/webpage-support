@@ -4,7 +4,7 @@ import pytest
 
 from datetime import datetime, timedelta, timezone
 
-from banner_pipeline.collect import _candidate, build_review, parse_feed, parse_pho_html, parse_wordpress
+from banner_pipeline.collect import _candidate, build_review, matches_topic, parse_feed, parse_pho_html, parse_wordpress
 
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -35,6 +35,31 @@ def test_parse_wordpress_decodes_title():
 def test_malformed_wordpress_fails_closed():
     with pytest.raises(ValueError):
         parse_wordpress("{}", source("blog", "Our Blog", "https://example.org/wp-json/wp/v2/posts"))
+
+
+def test_topic_rules_match_respiratory_supply_and_modelling_news():
+    filtered = {
+        "topic_rules": [
+            {"any": ["influenza", "rsv"]},
+            {"all": [["drug", "pharmaceutical"], ["shortage", "supply chain"]]},
+            {"all": [["model", "forecast"], ["outbreak", "transmission"]]},
+        ]
+    }
+    assert matches_topic(filtered, "Influenza activity rises across Ontario")
+    assert matches_topic(filtered, "Hospitals monitor a drug shortage", "Pharmaceutical supply chain disruption")
+    assert matches_topic(filtered, "Researchers build a forecast model", "Predicting outbreak transmission")
+    assert not matches_topic(filtered, "New nutrition study examines breakfast habits")
+
+
+def test_filtered_feed_allows_zero_relevant_entries():
+    payload = """<?xml version='1.0'?><rss version='2.0'><channel><title>Health</title>
+      <item><title>Nutrition study</title><link>https://www.cbc.ca/news/health/nutrition</link>
+      <description>Researchers examine breakfast habits.</description>
+      <pubDate>Thu, 20 Aug 2026 12:00:00 GMT</pubDate></item>
+    </channel></rss>"""
+    filtered = source("cbc-health", "CBC News", "https://www.cbc.ca/cmlink/rss-health")
+    filtered["topic_rules"] = [{"any": ["influenza", "rsv"]}]
+    assert parse_feed(payload, filtered) == []
 
 
 def test_manual_candidate_uses_same_review_and_lock(monkeypatch):
