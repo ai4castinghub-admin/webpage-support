@@ -47,7 +47,7 @@ jobs:
           MANUAL_PHO_DATE: ${{ inputs.manual_pho_date }}
         run: python -m banner_pipeline.collect
       - name: Run parser tests
-        run: pytest -q
+        run: python -m pytest -q
       - name: Create review branch and pull request
         env:
           GH_TOKEN: ${{ github.token }}

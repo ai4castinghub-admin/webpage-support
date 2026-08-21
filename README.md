@@ -93,7 +93,7 @@ If WordPress removes the iframe or the browser blocks it, stop and ask the Unive
 python -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
-pytest -q
+python -m pytest -q
 python -m banner_pipeline.collect
 python -m banner_pipeline.validate
 python -m banner_pipeline.build
@@ -107,4 +107,3 @@ The generated self-contained page is `build/site/index.html`. Tests use saved fi
 - Normal items expire no later than 14 days after collection; `evergreen: true` requires an explicit lead decision.
 - The published page contains only approved public headline fields. It contains no repository secrets or private review fields.
 - This is a headline/link banner, not an emergency-alert system or source of medical advice.
-
