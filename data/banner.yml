@@ -15,6 +15,6 @@ items:
   title: Why Nova Scotia is now tracking respiratory syncytial virus deaths
   url: https://www.cbc.ca/news/canada/nova-scotia/rsv-respiratory-syncytial-virus-deaths-vaccination-nova-scotia-9.7316836?cmp=rss
   published_at: '2026-08-23T09:00:00Z'
-  selected: false
+  selected: true
   expires_at: '2026-09-07T12:23:02Z'
   evergreen: false
