@@ -25,7 +25,7 @@ items:
     disease outbreak
   url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html
   published_at: '2026-08-28T13:42:44Z'
-  selected: false
+  selected: true
   expires_at: '2026-09-14T18:20:55Z'
   evergreen: false
 - id: 4283461dd4a33be5
