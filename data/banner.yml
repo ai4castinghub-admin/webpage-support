@@ -1,4 +1,4 @@
-generated_at: '2026-08-24T12:23:02Z'
+generated_at: '2026-08-31T18:20:55Z'
 items:
 - id: f9d2eae9ff9ac9d5
   source_id: cbc-health
@@ -17,4 +17,24 @@ items:
   published_at: '2026-08-23T09:00:00Z'
   selected: true
   expires_at: '2026-09-07T12:23:02Z'
+  evergreen: false
+- id: 8c5cdeb699b322aa
+  source_id: phac-media-room
+  source: Public Health Agency of Canada
+  title: Government of Canada extends temporary border measures in response to Ebola
+    disease outbreak
+  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html
+  published_at: '2026-08-28T13:42:44Z'
+  selected: true
+  expires_at: '2026-09-14T18:20:55Z'
+  evergreen: false
+- id: 4283461dd4a33be5
+  source_id: phac-media-room
+  source: Public Health Agency of Canada
+  title: Government of Canada invests $6 million to help Canadians get active with
+    ParticipACTION
+  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-invests-6-million-to-help-canadians-get-active-with-participaction.html
+  published_at: '2026-08-25T15:10:54Z'
+  selected: false
+  expires_at: '2026-09-14T18:20:55Z'
   evergreen: false
