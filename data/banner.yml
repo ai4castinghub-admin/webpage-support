@@ -1,23 +1,5 @@
-generated_at: '2026-08-31T18:20:55Z'
+generated_at: '2026-09-07T16:47:08Z'
 items:
-- id: f9d2eae9ff9ac9d5
-  source_id: cbc-health
-  source: CBC News
-  title: Inside the Montreal lab preparing Canada for the next pandemic
-  url: https://www.cbc.ca/news/canada/montreal/montreal-lab-preps-for-next-pandemic-9.7309664?cmp=rss
-  published_at: '2026-08-17T16:24:19Z'
-  selected: true
-  expires_at: '2026-09-04T19:37:31Z'
-  evergreen: false
-- id: d40faf1cc0d5eba5
-  source_id: cbc-health
-  source: CBC News
-  title: Why Nova Scotia is now tracking respiratory syncytial virus deaths
-  url: https://www.cbc.ca/news/canada/nova-scotia/rsv-respiratory-syncytial-virus-deaths-vaccination-nova-scotia-9.7316836?cmp=rss
-  published_at: '2026-08-23T09:00:00Z'
-  selected: true
-  expires_at: '2026-09-07T12:23:02Z'
-  evergreen: false
 - id: 8c5cdeb699b322aa
   source_id: phac-media-room
   source: Public Health Agency of Canada
@@ -28,13 +10,12 @@ items:
   selected: true
   expires_at: '2026-09-14T18:20:55Z'
   evergreen: false
-- id: 4283461dd4a33be5
+- id: 1e6bb9d9f72f24f7
   source_id: phac-media-room
   source: Public Health Agency of Canada
-  title: Government of Canada invests $6 million to help Canadians get active with
-    ParticipACTION
-  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-invests-6-million-to-help-canadians-get-active-with-participaction.html
-  published_at: '2026-08-25T15:10:54Z'
+  title: Message from the Minister of Health – Cancer Awareness Month
+  url: https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html
+  published_at: '2026-08-31T17:38:16Z'
   selected: false
-  expires_at: '2026-09-14T18:20:55Z'
+  expires_at: '2026-09-21T16:47:08Z'
   evergreen: false
