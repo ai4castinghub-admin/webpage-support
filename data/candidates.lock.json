@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T16:47:08Z",
+  "generated_at": "2026-09-14T17:10:24Z",
   "items": [
     {
       "id": "8c5cdeb699b322aa",
@@ -14,6 +14,48 @@
       "source": "Public Health Agency of Canada",
       "url": "https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html",
       "published_at": "2026-08-31T17:38:16Z"
+    },
+    {
+      "id": "4af1ab14a3700057",
+      "source_id": "cbc-health",
+      "source": "CBC News",
+      "url": "https://www.cbc.ca/news/canada/nova-scotia/rsv-vaccine-nova-scotia-9.7340798?cmp=rss",
+      "published_at": "2026-09-13T09:00:00Z"
+    },
+    {
+      "id": "41cc1d0d7213f2a4",
+      "source_id": "pho-news",
+      "source": "Public Health Ontario",
+      "url": "https://www.publichealthontario.ca/en/About/News/2026/09/ORVT-Tool-Enhancements",
+      "published_at": "2026-09-11T00:00:00Z"
+    },
+    {
+      "id": "7505d814df4bf44b",
+      "source_id": "phac-media-room",
+      "source": "Public Health Agency of Canada",
+      "url": "https://www.canada.ca/en/public-health/news/2026/09/government-of-canada-expands-access-to-hiv-self-testing-and-peer-support-services.html",
+      "published_at": "2026-09-10T14:40:04Z"
+    },
+    {
+      "id": "18203ddef8bb00ff",
+      "source_id": "phac-media-room",
+      "source": "Public Health Agency of Canada",
+      "url": "https://www.canada.ca/en/public-health/news/2026/09/message-from-the-minister-of-health-on-world-suicide-prevention-day.html",
+      "published_at": "2026-09-10T14:00:14Z"
+    },
+    {
+      "id": "9d1a0e2bd0128a13",
+      "source_id": "cbc-health",
+      "source": "CBC News",
+      "url": "https://www.cbc.ca/news/health/bangladesh-worst-measles-outbreak-9.7337063?cmp=rss",
+      "published_at": "2026-09-09T17:17:22Z"
+    },
+    {
+      "id": "1a35a62a105b6b23",
+      "source_id": "phac-media-room",
+      "source": "Public Health Agency of Canada",
+      "url": "https://www.canada.ca/en/public-health/news/2026/09/government-of-canada-to-make-an-announcement-to-support-improving-hiv-prevention-and-support-services.html",
+      "published_at": "2026-09-09T14:00:13Z"
     }
   ]
 }
