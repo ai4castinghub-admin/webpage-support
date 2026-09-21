@@ -1,21 +1,38 @@
-generated_at: '2026-09-07T16:47:08Z'
+generated_at: '2026-09-21T17:19:28Z'
 items:
-- id: 8c5cdeb699b322aa
+- id: 73613b17d4aa0893
   source_id: phac-media-room
   source: Public Health Agency of Canada
-  title: Government of Canada extends temporary border measures in response to Ebola
-    disease outbreak
-  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html
-  published_at: '2026-08-28T13:42:44Z'
-  selected: true
-  expires_at: '2026-09-14T18:20:55Z'
+  title: Message from the Minister of Health on World Alzheimer's Day
+  url: https://www.canada.ca/en/public-health/news/2026/09/message-from-the-minister-of-health-on-world-alzheimers-day.html
+  published_at: '2026-09-21T18:51:00Z'
+  selected: false
+  expires_at: '2026-10-05T17:19:28Z'
   evergreen: false
-- id: 1e6bb9d9f72f24f7
+- id: 8116704b39f3d2b8
   source_id: phac-media-room
   source: Public Health Agency of Canada
-  title: Message from the Minister of Health – Cancer Awareness Month
-  url: https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html
-  published_at: '2026-08-31T17:38:16Z'
-  selected: true
-  expires_at: '2026-09-21T16:47:08Z'
+  title: Progress update on the Vaccine Impact Assistance Program
+  url: https://www.canada.ca/en/public-health/news/2026/09/progress-update-on-the-vaccine-impact-assistance-program.html
+  published_at: '2026-09-19T02:20:00Z'
+  selected: false
+  expires_at: '2026-10-05T17:19:28Z'
+  evergreen: false
+- id: ecaa34b07582804e
+  source_id: cbc-health
+  source: CBC News
+  title: COVID-19 benefit repayment is hurting low-income Canadians, report says
+  url: https://www.cbc.ca/news/politics/cra-pandemic-benefit-clawbacks-cerb-cra-maytree-report-9.7330433?cmp=rss
+  published_at: '2026-09-15T08:00:00Z'
+  selected: false
+  expires_at: '2026-10-05T17:19:28Z'
+  evergreen: false
+- id: e0eb0c9b90df699d
+  source_id: pho-news
+  source: Public Health Ontario
+  title: 'Research in Action: RSV Immunization Shows Strong Protection for Infants'
+  url: https://www.publichealthontario.ca/en/About/News/2026/09/RSV-Immunization-Infants
+  published_at: '2026-09-15T00:00:00Z'
+  selected: false
+  expires_at: '2026-10-05T17:19:28Z'
   evergreen: false

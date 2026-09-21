@@ -1,19 +1,33 @@
 {
-  "generated_at": "2026-09-07T16:47:08Z",
+  "generated_at": "2026-09-21T17:19:28Z",
   "items": [
     {
-      "id": "8c5cdeb699b322aa",
+      "id": "73613b17d4aa0893",
       "source_id": "phac-media-room",
       "source": "Public Health Agency of Canada",
-      "url": "https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html",
-      "published_at": "2026-08-28T13:42:44Z"
+      "url": "https://www.canada.ca/en/public-health/news/2026/09/message-from-the-minister-of-health-on-world-alzheimers-day.html",
+      "published_at": "2026-09-21T18:51:00Z"
     },
     {
-      "id": "1e6bb9d9f72f24f7",
+      "id": "8116704b39f3d2b8",
       "source_id": "phac-media-room",
       "source": "Public Health Agency of Canada",
-      "url": "https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html",
-      "published_at": "2026-08-31T17:38:16Z"
+      "url": "https://www.canada.ca/en/public-health/news/2026/09/progress-update-on-the-vaccine-impact-assistance-program.html",
+      "published_at": "2026-09-19T02:20:00Z"
+    },
+    {
+      "id": "ecaa34b07582804e",
+      "source_id": "cbc-health",
+      "source": "CBC News",
+      "url": "https://www.cbc.ca/news/politics/cra-pandemic-benefit-clawbacks-cerb-cra-maytree-report-9.7330433?cmp=rss",
+      "published_at": "2026-09-15T08:00:00Z"
+    },
+    {
+      "id": "e0eb0c9b90df699d",
+      "source_id": "pho-news",
+      "source": "Public Health Ontario",
+      "url": "https://www.publichealthontario.ca/en/About/News/2026/09/RSV-Immunization-Infants",
+      "published_at": "2026-09-15T00:00:00Z"
     }
   ]
 }
