@@ -1,21 +1,21 @@
-generated_at: '2026-09-07T16:47:08Z'
+generated_at: '2026-09-28T18:53:03Z'
 items:
-- id: 8c5cdeb699b322aa
-  source_id: phac-media-room
-  source: Public Health Agency of Canada
-  title: Government of Canada extends temporary border measures in response to Ebola
-    disease outbreak
-  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html
-  published_at: '2026-08-28T13:42:44Z'
-  selected: true
-  expires_at: '2026-09-14T18:20:55Z'
+- id: 52ba4e6e034868fc
+  source_id: pho-news
+  source: Public Health Ontario
+  title: New Hand Hygiene Program Has Launched!
+  url: https://www.publichealthontario.ca/en/About/News/2026/09/Hand-Hygiene-Program
+  published_at: '2026-09-28T00:00:00Z'
+  selected: false
+  expires_at: '2026-10-12T18:53:03Z'
   evergreen: false
-- id: 1e6bb9d9f72f24f7
-  source_id: phac-media-room
+- id: da9f0c2b37676d19
+  source_id: phac-public-health-updates
   source: Public Health Agency of Canada
-  title: Message from the Minister of Health – Cancer Awareness Month
-  url: https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html
-  published_at: '2026-08-31T17:38:16Z'
-  selected: true
-  expires_at: '2026-09-21T16:47:08Z'
+  title: Health Promotion and Chronic Disease Prevention in Canada, Vol 46, No 9,
+    September 2026
+  url: https://www.canada.ca/en/public-health/services/reports-publications/health-promotion-chronic-disease-prevention-canada-research-policy-practice/vol-46-no-9-2026.html
+  published_at: '2026-09-23T12:26:53Z'
+  selected: false
+  expires_at: '2026-10-12T18:53:03Z'
   evergreen: false
