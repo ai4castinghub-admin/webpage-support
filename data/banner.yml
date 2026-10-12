@@ -1,21 +1,47 @@
-generated_at: '2026-09-07T16:47:08Z'
+generated_at: '2026-10-12T20:32:06Z'
 items:
-- id: 8c5cdeb699b322aa
+- id: 17bc8e2ec7bd1773
   source_id: phac-media-room
   source: Public Health Agency of Canada
-  title: Government of Canada extends temporary border measures in response to Ebola
-    disease outbreak
-  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html
-  published_at: '2026-08-28T13:42:44Z'
-  selected: true
-  expires_at: '2026-09-14T18:20:55Z'
+  title: Message from the Minister of Health – World Mental Health Day
+  url: https://www.canada.ca/en/public-health/news/2026/10/message-from-the-minister-of-health--world-mental-health-day.html
+  published_at: '2026-10-09T13:50:00Z'
+  selected: false
+  expires_at: '2026-10-26T20:32:06Z'
   evergreen: false
-- id: 1e6bb9d9f72f24f7
-  source_id: phac-media-room
-  source: Public Health Agency of Canada
-  title: Message from the Minister of Health – Cancer Awareness Month
-  url: https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html
-  published_at: '2026-08-31T17:38:16Z'
-  selected: true
-  expires_at: '2026-09-21T16:47:08Z'
+- id: f00bb99f0e09a346
+  source_id: cbc-health
+  source: CBC News
+  title: How good is this year's flu shot? Here's what to know about flu season
+  url: https://www.cbc.ca/news/health/flu-season-questions-9.7374821?cmp=rss
+  published_at: '2026-10-09T08:00:00Z'
+  selected: false
+  expires_at: '2026-10-26T20:32:06Z'
+  evergreen: false
+- id: 0638aefd197d4468
+  source_id: pho-news
+  source: Public Health Ontario
+  title: PHO Connections – October 2026
+  url: https://www.publichealthontario.ca/en/About/News/2026/10/PHO-Connections-October-2026
+  published_at: '2026-10-09T00:00:00Z'
+  selected: false
+  expires_at: '2026-10-26T20:32:06Z'
+  evergreen: false
+- id: b80a4845d89343f4
+  source_id: cbc-health
+  source: CBC News
+  title: How anti-COVID activism injected life into Alberta's separatist movement
+  url: https://www.cbc.ca/news/canada/calgary/analysis-covid-alberta-separatism-9.7373200?cmp=rss
+  published_at: '2026-10-08T10:00:00Z'
+  selected: false
+  expires_at: '2026-10-26T20:32:06Z'
+  evergreen: false
+- id: ec247975770432b7
+  source_id: cbc-health
+  source: CBC News
+  title: New York state declares measles disaster emergency
+  url: https://www.cbc.ca/news/world/new-york-state-measles-disaster-emergency-9.7370148?cmp=rss
+  published_at: '2026-10-05T21:42:07Z'
+  selected: false
+  expires_at: '2026-10-26T20:32:06Z'
   evergreen: false
