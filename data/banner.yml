@@ -1,21 +1,30 @@
-generated_at: '2026-09-07T16:47:08Z'
+generated_at: '2026-10-19T17:53:20Z'
 items:
-- id: 8c5cdeb699b322aa
-  source_id: phac-media-room
-  source: Public Health Agency of Canada
-  title: Government of Canada extends temporary border measures in response to Ebola
-    disease outbreak
-  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html
-  published_at: '2026-08-28T13:42:44Z'
-  selected: true
-  expires_at: '2026-09-14T18:20:55Z'
+- id: 7f980e11759e0a44
+  source_id: cbc-health
+  source: CBC News
+  title: Measles outbreak declared over in Manitoba
+  url: https://www.cbc.ca/news/canada/manitoba/measles-outbreak-declared-over-9.7384397?cmp=rss
+  published_at: '2026-10-16T20:20:55Z'
+  selected: false
+  expires_at: '2026-11-02T17:53:20Z'
   evergreen: false
-- id: 1e6bb9d9f72f24f7
-  source_id: phac-media-room
+- id: a7503dd9064f6b38
+  source_id: pho-news
+  source: Public Health Ontario
+  title: 'National Infection Control Week 2026: IPAC is Powered by You'
+  url: https://www.publichealthontario.ca/en/About/News/2026/10/NICW-2026
+  published_at: '2026-10-16T00:00:00Z'
+  selected: false
+  expires_at: '2026-11-02T17:53:20Z'
+  evergreen: false
+- id: d93cd41263184612
+  source_id: phac-public-health-updates
   source: Public Health Agency of Canada
-  title: Message from the Minister of Health – Cancer Awareness Month
-  url: https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html
-  published_at: '2026-08-31T17:38:16Z'
-  selected: true
-  expires_at: '2026-09-21T16:47:08Z'
+  title: Health Promotion and Chronic Disease Prevention in Canada, Vol 46, No 10,
+    October 2026
+  url: https://www.canada.ca/en/public-health/services/reports-publications/health-promotion-chronic-disease-prevention-canada-research-policy-practice/vol-46-no-10-2026.html
+  published_at: '2026-10-14T11:50:04Z'
+  selected: false
+  expires_at: '2026-11-02T17:53:20Z'
   evergreen: false
