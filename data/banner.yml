@@ -1,21 +1,11 @@
-generated_at: '2026-09-07T16:47:08Z'
+generated_at: '2026-10-26T17:48:13Z'
 items:
-- id: 8c5cdeb699b322aa
+- id: f8f8c81526b0bc11
   source_id: phac-media-room
   source: Public Health Agency of Canada
-  title: Government of Canada extends temporary border measures in response to Ebola
-    disease outbreak
-  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html
-  published_at: '2026-08-28T13:42:44Z'
-  selected: true
-  expires_at: '2026-09-14T18:20:55Z'
-  evergreen: false
-- id: 1e6bb9d9f72f24f7
-  source_id: phac-media-room
-  source: Public Health Agency of Canada
-  title: Message from the Minister of Health – Cancer Awareness Month
-  url: https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html
-  published_at: '2026-08-31T17:38:16Z'
-  selected: true
-  expires_at: '2026-09-21T16:47:08Z'
+  title: Multi-jurisdictional Measles Outbreak is Over
+  url: https://www.canada.ca/en/public-health/news/2026/10/multi-jurisdictional-measles-outbreak-is-over.html
+  published_at: '2026-10-19T18:15:26Z'
+  selected: false
+  expires_at: '2026-11-09T17:48:13Z'
   evergreen: false
