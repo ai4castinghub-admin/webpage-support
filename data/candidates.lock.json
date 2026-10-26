@@ -1,19 +1,12 @@
 {
-  "generated_at": "2026-09-07T16:47:08Z",
+  "generated_at": "2026-10-26T17:48:13Z",
   "items": [
     {
-      "id": "8c5cdeb699b322aa",
+      "id": "f8f8c81526b0bc11",
       "source_id": "phac-media-room",
       "source": "Public Health Agency of Canada",
-      "url": "https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html",
-      "published_at": "2026-08-28T13:42:44Z"
-    },
-    {
-      "id": "1e6bb9d9f72f24f7",
-      "source_id": "phac-media-room",
-      "source": "Public Health Agency of Canada",
-      "url": "https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html",
-      "published_at": "2026-08-31T17:38:16Z"
+      "url": "https://www.canada.ca/en/public-health/news/2026/10/multi-jurisdictional-measles-outbreak-is-over.html",
+      "published_at": "2026-10-19T18:15:26Z"
     }
   ]
 }
