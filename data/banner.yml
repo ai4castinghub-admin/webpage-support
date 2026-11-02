@@ -1,21 +1,21 @@
-generated_at: '2026-09-07T16:47:08Z'
+generated_at: '2026-11-02T21:59:13Z'
 items:
-- id: 8c5cdeb699b322aa
-  source_id: phac-media-room
-  source: Public Health Agency of Canada
-  title: Government of Canada extends temporary border measures in response to Ebola
-    disease outbreak
-  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html
-  published_at: '2026-08-28T13:42:44Z'
-  selected: true
-  expires_at: '2026-09-14T18:20:55Z'
+- id: 0638aefd197d4468
+  source_id: pho-news
+  source: Public Health Ontario
+  title: PHO Connections – October 2026
+  url: https://www.publichealthontario.ca/en/About/News/2026/10/PHO-Connections-October-2026
+  published_at: '2026-11-02T00:00:00Z'
+  selected: false
+  expires_at: '2026-11-16T21:59:13Z'
   evergreen: false
-- id: 1e6bb9d9f72f24f7
+- id: 7b75a67e47211bbf
   source_id: phac-media-room
   source: Public Health Agency of Canada
-  title: Message from the Minister of Health – Cancer Awareness Month
-  url: https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html
-  published_at: '2026-08-31T17:38:16Z'
-  selected: true
-  expires_at: '2026-09-21T16:47:08Z'
+  title: Statement from the Chief Public Health Officer of Canada on the Report on
+    the State of Public Health in Canada 2026
+  url: https://www.canada.ca/en/public-health/news/2026/10/statement-from-the-chief-public-health-officer-of-canada-on-the-report-on-the-state-of-public-health-in-canada-2026.html
+  published_at: '2026-10-28T16:05:00Z'
+  selected: false
+  expires_at: '2026-11-16T21:59:13Z'
   evergreen: false
