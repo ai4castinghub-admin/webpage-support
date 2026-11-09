@@ -1,21 +1,22 @@
-generated_at: '2026-09-07T16:47:08Z'
+generated_at: '2026-11-09T22:46:20Z'
 items:
-- id: 8c5cdeb699b322aa
-  source_id: phac-media-room
-  source: Public Health Agency of Canada
-  title: Government of Canada extends temporary border measures in response to Ebola
-    disease outbreak
-  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html
-  published_at: '2026-08-28T13:42:44Z'
-  selected: true
-  expires_at: '2026-09-14T18:20:55Z'
+- id: 127785bd9c617d98
+  source_id: cbc-health
+  source: CBC News
+  title: 'Confirmed measles case in Durham region: unimmunized child with history
+    of recent international travel'
+  url: https://www.cbc.ca/news/canada/toronto/confirmed-measles-case-durham-region-9.7413737?cmp=rss
+  published_at: '2026-11-07T20:23:38Z'
+  selected: false
+  expires_at: '2026-11-23T22:46:20Z'
   evergreen: false
-- id: 1e6bb9d9f72f24f7
-  source_id: phac-media-room
-  source: Public Health Agency of Canada
-  title: Message from the Minister of Health – Cancer Awareness Month
-  url: https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html
-  published_at: '2026-08-31T17:38:16Z'
-  selected: true
-  expires_at: '2026-09-21T16:47:08Z'
+- id: 0be2b18f30465d36
+  source_id: cbc-health
+  source: CBC News
+  title: Moderna's mRNA flu and flu-COVID combo vaccines have been approved by Health
+    Canada
+  url: https://www.cbc.ca/news/health/modern-flu-vaccine-9.7411929?cmp=rss
+  published_at: '2026-11-06T16:39:52Z'
+  selected: false
+  expires_at: '2026-11-23T22:46:20Z'
   evergreen: false
