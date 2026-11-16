@@ -1,21 +1,11 @@
-generated_at: '2026-09-07T16:47:08Z'
+generated_at: '2026-11-16T22:36:47Z'
 items:
-- id: 8c5cdeb699b322aa
-  source_id: phac-media-room
-  source: Public Health Agency of Canada
-  title: Government of Canada extends temporary border measures in response to Ebola
-    disease outbreak
-  url: https://www.canada.ca/en/public-health/news/2026/08/government-of-canada-extends-temporary-border-measures-in-response-to-ebola-disease-outbreak.html
-  published_at: '2026-08-28T13:42:44Z'
-  selected: true
-  expires_at: '2026-09-14T18:20:55Z'
-  evergreen: false
-- id: 1e6bb9d9f72f24f7
-  source_id: phac-media-room
-  source: Public Health Agency of Canada
-  title: Message from the Minister of Health – Cancer Awareness Month
-  url: https://www.canada.ca/en/public-health/news/2026/08/message-from-the-minister-of-health--cancer-awareness-month.html
-  published_at: '2026-08-31T17:38:16Z'
-  selected: true
-  expires_at: '2026-09-21T16:47:08Z'
+- id: 1fe6b8fa55a088ba
+  source_id: pho-news
+  source: Public Health Ontario
+  title: PHO Connections – November 2026
+  url: https://www.publichealthontario.ca/en/About/News/2026/11/PHO-Connections-November-2026
+  published_at: '2026-11-12T00:00:00Z'
+  selected: false
+  expires_at: '2026-11-30T22:36:47Z'
   evergreen: false
